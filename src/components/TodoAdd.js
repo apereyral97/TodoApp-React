@@ -20,23 +20,21 @@ export const TodoAdd = ({ handleAddTodo }) => {
     }
     return (
         <>
-            <h4>Agregar TODO</h4>
-            <hr />
-            <form onSubmit={ handleSubmit }>
+            <form onSubmit={ handleSubmit } className='form-control'>
                 <input 
                     type="text"
                     name='description'
-                    className='form-control'
-                    placeholder='Aprender ...'
+                    className='form-text'
+                    placeholder='Learn...'
                     autoComplete='off'
                     value={ description }
                     onChange={ handleInputChange }
                 />
                 <button 
                     type='submit'
-                    className='btn btn-outline-primary mt-1 btn-block'
+                    className='btn-add'
                 >
-                    Agregar
+                    Add
                 </button>
             </form>
         </>

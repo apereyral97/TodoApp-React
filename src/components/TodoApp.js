@@ -2,7 +2,7 @@ import React, { useEffect, useReducer } from 'react';
 import { todoReducer } from './todoReducer';
 import { TodoList } from './TodoList';
 import { TodoAdd } from './TodoAdd';
-import '../css/style.css';
+import '../scss/style.css';
 const init = () => {
 
     return JSON.parse(localStorage.getItem('todos')) || [];
@@ -41,22 +41,21 @@ export const TodoApp = () => {
 
     return (
         <div>
-            <h1>TodoApp { todos.length }</h1>
-            <hr />
-
-            <div className='row'>
-                <div className='col-7'>
+            <div className='title-container'>
+                <h3 className='h3-heading'>.ToDo</h3>
+                <p>Tasks { todos.length }</p>
+            </div>
+            <div className='wrapper'>
+                <TodoAdd 
+                   handleAddTodo = { handleAddTodo }
+                 />
                     <TodoList 
                         todos={ todos }
                         handleDelete={ handleDelete }
                         handleToggle={ handleToggle }
                     />
-                </div>
-                <div className='col-5'>
-                     <TodoAdd 
-                       handleAddTodo = { handleAddTodo }
-                     />
-                </div>
+                
+                     
             </div>
         </div>
     )

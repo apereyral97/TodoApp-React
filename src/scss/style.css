@@ -1,0 +1,136 @@
+body {
+  padding: 20px;
+  background: #1D1C1C;
+}
+
+.title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+.title-container .h3-heading {
+  margin: 0;
+  color: #DFDFDF;
+  mix-blend-mode: normal;
+  text-shadow: 0px 4px 6px #989595;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+
+.title-container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0;
+  font-size: 1.5em;
+  color: #FF8A00;
+}
+
+.wrappe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.form-control .form-text {
+  width: 65%;
+  border: 1px;
+  border-radius: 25px;
+  height: 41px;
+  text-align: left;
+  padding: 0 0 0 25px;
+  color: #7878AB !important;
+}
+
+.btn-add {
+  font-family: 'Alatsi', sans-serif;
+  background: #0C8D21;
+  color: white;
+  width: 72px;
+  padding: 0.5em 1.5em;
+  border: 1px;
+  border-radius: 32px;
+  border-color: #0C8D21;
+}
+
+.list-item {
+  list-style-type: none;
+  padding: 20px 0;
+}
+
+.item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+.item-container .complete {
+  background-color: #83e7a5be !important;
+  color: whitesmoke;
+}
+
+.item-container .content-todo {
+  width: 65%;
+  overflow: hidden;
+  border-radius: 25px;
+  background-color: whitesmoke;
+  padding: 0 0 0 25px;
+}
+
+.item-container .content-todo p {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.item-container .btn-delete {
+  font-family: 'Alatsi', sans-serif;
+  background: #A04242;
+  color: white;
+  width: 72px;
+  padding: 0.5em 1.5em;
+  border: 1px;
+  border-radius: 32px;
+  border-color: #A04242;
+}
+/*# sourceMappingURL=style.css.map */
